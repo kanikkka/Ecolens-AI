@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7faf5;
+  --foreground: #24342a;
+
+  --primary: #3f7d4a;
+  --primary-dark: #2f6339;
+  --primary-light: #e6f2e7;
+
+  --secondary: #6f9f78;
+  --accent: #d9ead3;
+
+  --earth: #9a7653;
+  --earth-light: #f1e8dc;
+
+  --sky: #dceef2;
+  --cream: #fffdf8;
+
+  --card: #ffffff;
+  --border: #dfe8df;
+
+  --muted: #68756c;
+  --success: #4d8b57;
+  --warning: #c28a3a;
+  --danger: #c65d52;
+
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-earth: var(--earth);
+  --color-earth-light: var(--earth-light);
+  --color-sky: var(--sky);
+  --color-cream: var(--cream);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--foreground);
+}
